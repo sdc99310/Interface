@@ -1,6 +1,4 @@
-
-
-  var letter = "MONDAY";
+var letter = "MONDAY";
 
   function setup(){
     createCanvas(780, 900);
