@@ -26,7 +26,7 @@ function centerCanvas() {
 
 ///////////////////////////////setup
 function setup() {
-  cnv = createCanvas(750, 1080/2). style('display', 'block');
+  cnv = createCanvas(750, windowHeight). style('display', 'block');
   centerCanvas();//centerCanvas
 
   ////////////////////////button
@@ -103,7 +103,7 @@ function setup() {
 /////////////////centerCanvas
 function windowResized() {
   centerCanvas();
-  resizeCanvas (750, 1080/2);
+  resizeCanvas (750, windowHeight);
 }
 
 ////////////////color picker
