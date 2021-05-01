@@ -1,61 +1,102 @@
+body {
+	/* background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%); */
+	display: grid;
+	place-items: center;
+	padding:0;
+	margin:0;
+	width: 1680px;
+	height: 1080;
+  }
+
 .box01 {
-  width: 261px;
+  position: absolute;
+  width: 214px;
   height: 1080px;
-  padding: 0 21px 45px 0;
+  /* padding: 0 21px 45px 0; */
   border: solid 1px #707070;
-  background-color: #ffffff;
+  background-color: #f44646;
 }
 
 .box02 {
-  width: 261px;
+  top: 0px;
+  left: 225px;
+
+  position:  absolute;
+  width: 214px;
   height: 1080px;
-  margin: 0 0 0 39px;
-  padding: 0 36px 802px 35px;
+
   border: solid 1px #707070;
-  background-color: #ffffff;
+  background-color: #6c4747;
 }
 
-.box03{
-  width: 261px;
+.box03 {
+  top: 0px;
+  left:450px;
+
+  position: absolute;
+  width: 214px;
   height: 1080px;
-  margin: 0 0 0 40px;
-  padding: 858px 37px 0 34px;
+
   border: solid 1px #707070;
-  background-color: #ffffff;
+  background-color: #a609f5;
 }
 
-.box04{
-  width: 261px;
+.box04 {
+  top: 0px;
+  left: 675px;
+
+  position:  absolute;
+  width: 214px;
   height: 1080px;
-  margin: 0 0 0 41px;
-  padding: 0 38px 802px 33px;
+
   border: solid 1px #707070;
-  background-color: #ffffff;
+  background-color: hsl(0, 100%, 55%);
 }
 
 .box05 {
-  width: 261px;
+  top: 0px;
+  left: 900px;
+
+  position:  absolute;
+  width: 214px;
   height: 1080px;
-  margin: 0 0 0 42px;
-  padding: 858px 39px 0 32px;
+
   border: solid 1px #707070;
-  background-color: #ffffff;
+  background-color: hsl(0, 100%, 12%);
 }
 
 .box06 {
-  width: 261px;
+  top: 0px;
+  left: 1125px;
+
+  position:  absolute;
+  width: 214px;
   height: 1080px;
-  margin: 0 0 0 43px;
-  padding: 858px 40px 0 31px;
+
   border: solid 1px #707070;
-  background-color: #ffffff;
+  background-color: hsl(0, 100%, 12%);
 }
 
-.box07 { 
-  width: 258px;
+.box07 {
+  top: 0px;
+  left: 1350px;
+
+  position:  absolute;
+  width: 214px;
   height: 1080px;
-  margin: 0 0 0 44px;
-  padding: 0 38px 802px 30px;
+
   border: solid 1px #707070;
-  background-color: #ffffff;
+  background-color: hsl(0, 100%, 12%);
+}
+
+.box08 {
+  top: 0px;
+  left: 1575px;
+
+  position:  absolute;
+  width: 100px;
+  height: 1080px;
+
+  border: solid 1px #707070;
+  background-color: hsl(0, 100%, 12%);
 }
