@@ -23,6 +23,14 @@ function centerCanvas() {
   cnv.position(x, y);
 }//centerCanvas
 
+// function mousePressed(){
+//   // if (mouseY >= 100 && mouseY <= 120 && mouseX >= 110 && mouseX <= 130){ 
+//   //   //range accounting for text length
+//     [window.open("http://www.google.com")],
+//     [window.open("http://www.naver.com")],
+//     [window.open("http://www.naver.com")]
+//   }//1,2,3
+// // }
 
 ///////////////////////////////setup
 function setup() {
@@ -32,8 +40,16 @@ function setup() {
   ////////////////////////button
   // p20 = createP('【TEMPLATE】'). position (140, height-700);
   button1 = createButton('Template 1').position(50, height-630);
+  button1.mouseClicked(window.open('http://www.google.com'))
   button2 = createButton('Template 2').position(50, height-600);
+  button2.mousePressed(2)
   button3 = createButton('Template 3').position(50, height-570);
+  button3.mousePressed(3)
+
+  // button4 = createButton('ꓧꓳꓟꓰ').position(10, height-850);
+  button4 = createButton('ꓫ').position(10, height-850);
+
+
 
   ////////////////////////slider
   p1 = createP('【STROKE】'). position (115, height-540);

@@ -31,3 +31,29 @@ canvas {
   /* border: 0.1px solid rgb(155, 55, 130); */
   /* border: 10mm ridge rgb(24, 3, 255); */
 }
+
+.home {
+
+}
+
+.template01 {
+  display: flex;
+		justify-content: center;
+		position: absolute;
+		top: 10px;
+		left: 50px;
+    position: absolute;
+    top: -25px;
+    right: 15.8px;
+    width: 350.5px;
+    height: 25px;
+    background: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
+}
+
+.template02 {
+  
+}
+
+.template03 {
+  
+}
