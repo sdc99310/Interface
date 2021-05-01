@@ -21,7 +21,11 @@ function preload() {
   font = loadFont('LeagueSpartan-Bold.otf')
 }
 
-
+function mousePressed(){
+  // if (mouseY >= 100 && mouseY <= 120 && mouseX >= 110 && mouseX <= 130){ 
+  //   //range accounting for text length
+    window.open("https://sdc99310.github.io/Interface/main.html")
+  }
 
 function centerCanvas() {
   var x = (windowWidth - width) / 2;
@@ -40,9 +44,9 @@ function setup() {
   // button1 = createButton('Template 1').position(50, height-620);
   // button2 = createButton('Template 2').position(140, height-620);
   // button3 = createButton('Template 3').position(230, height-620);
-  button1 = createButton('Template 1').position(50, height-680);
-  button2 = createButton('Template 2').position(50, height-650);
-  button3 = createButton('Template 3').position(50, height-620);
+
+  button4 = createButton('ꓫ').position(10, height-850);
+
 
   ////Tues-slider
   p0 = createP('【Tues-】'). position (120, height-550);//text size
@@ -78,9 +82,9 @@ function setup() {
 
 
   ////color picker
-  inp1 = createColorPicker('white') .position(50, height-730).size(50);
+  inp1 = createColorPicker('white') .position(50, height-630).size(50);
   inp1.input(setShade1);
-  q3 = createP('Background'). position (115, height-736);
+  q3 = createP('Background'). position (115, height-636);
 
   inp2 = createColorPicker(color('blue')).position(50, height -580).size(50);
   inp2.input(setShade2);

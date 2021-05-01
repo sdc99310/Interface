@@ -1,0 +1,59 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  height: 100%;
+}
+
+/* body {
+	/* background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%); */
+	/* display: grid;
+	place-items: center;
+	padding:0;
+	margin:0;
+	width: 20%;
+	height: auto;
+  } */ */
+
+canvas {
+  /* width: 50%;
+  height: 50%; */
+  /* display: block; */
+
+  display: block;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  /* align-items: center; */
+
+  /* border: 0.1px solid rgb(155, 55, 130); */
+  /* border: 10mm ridge rgb(24, 3, 255); */
+}
+
+.home {
+
+}
+
+.template01 {
+  display: flex;
+		justify-content: center;
+		position: absolute;
+		top: 10px;
+		left: 50px;
+    position: absolute;
+    top: -25px;
+    right: 15.8px;
+    width: 350.5px;
+    height: 25px;
+    background: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
+}
+
+.template02 {
+  
+}
+
+.template03 {
+  
+}

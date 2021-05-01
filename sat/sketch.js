@@ -15,6 +15,11 @@ function centerCanvas() {
   cnv.position(x, y);
 }//centerCanvas
 
+function mousePressed(){
+  // if (mouseY >= 100 && mouseY <= 120 && mouseX >= 110 && mouseX <= 130){ 
+  //   //range accounting for text length
+    window.open("https://sdc99310.github.io/Interface/main.html")
+  }
 
 function preload() {
   font = loadFont('LeagueSpartan-Bold.otf')
@@ -26,9 +31,11 @@ function setup() {
 
  ////////////////////////button
 //  p20 = createP('【TEMPLATE】'). position (135, height-1220);
- button1 = createButton('Template 1').position(50, height-800);
- button2 = createButton('Template 2').position(50, height-770);
- button3 = createButton('Template 3').position(50, height-740);
+//  button1 = createButton('Template 1').position(50, height-800);
+//  button2 = createButton('Template 2').position(50, height-770);
+//  button3 = createButton('Template 3').position(50, height-740);
+
+ button4 = createButton('ꓫ').position(10, height-850);
 
 ////Wednse-slider
 p0 = createP('【Wednse】'). position (125, height-730);
@@ -81,9 +88,9 @@ p10 = createP('√ Press "S" to save the image.png'). position (55, height-60);/
 
 
 ///color picker
-  inp1 = createColorPicker('black') .position(50, height-840).size(75);
+  inp1 = createColorPicker('black') .position(50, height-760).size(75);
   inp1.input(setShade1);
-  q3 = createP('Background'). position (140, height-846);
+  q3 = createP('Background'). position (140, height-766);
 
   //wednse color
   inp2 = createColorPicker(color('rgba(255, 0, 0, 0.9)')).position(50, height -680).size(50);
