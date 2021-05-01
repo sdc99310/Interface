@@ -30,54 +30,54 @@ function setup() {
   centerCanvas();//centerCanvas
 
   ////////////////////////button
-  p20 = createP('【TEMPLATE】'). position (140, height-700);
-  button1 = createButton('Template 1').position(50, height-650);
-  button2 = createButton('Template 2').position(150, height-650);
-  button3 = createButton('Template 3').position(250, height-650);
+  // p20 = createP('【TEMPLATE】'). position (140, height-700);
+  button1 = createButton('Template 1').position(50, height-630);
+  button2 = createButton('Template 2').position(50, height-600);
+  button3 = createButton('Template 3').position(50, height-570);
 
   ////////////////////////slider
-  p1 = createP('【STROKE】'). position (150, height-600);
-  s3 = createSlider(0, 5, 1, 0). position (50, height-500). size(250);
-  p3 = createP('Stroke weight'). position (140, height-500);//stroke
+  p1 = createP('【STROKE】'). position (115, height-540);
+  s3 = createSlider(0, 5, 0.4, 0). position (50, height-450). size(200,10);
+  p3 = createP('Stroke weight'). position (115, height-450);//stroke
   
   //spacing slider
-  p4 = createP('【SPACING】'). position (140, height-450);
+  p4 = createP('【SPACING】'). position (110, height-400);
 
-  s5 = createSlider(0, 1000, 470, 0). position (50, height-400). size(250);
-  p5 = createP('(Mon) ← →'). position (150, height-400);
-  s6 = createSlider(0, 1000, 200, 0). position (50, height-350). size(250);
-  p6 = createP('(Mon) ↑ ↓'). position (155, height-350);//wave
+  s5 = createSlider(0, 1000, 235, 0). position (50, height-350). size(200,10);
+  p5 = createP('(Mon) ← →'). position (115, height-350);
+  s6 = createSlider(0, 1000, 100, 0). position (50, height-300). size(200,10);
+  p6 = createP('(Mon) ↑ ↓'). position (120, height-300);//wave
 
   //wave slider
-  p7 = createP('【WAVE】'). position (150, height-300);
+  p7 = createP('【WAVE】'). position (120, height-250);
 
-  s2 = createSlider(0, 10, 1.5, 0). position (50, height-250). size(250);
-  p2 = createP('Speed'). position (160, height-250);
-  s8 = createSlider(0, 100, 10, 0). position (50, height-200). size(250);
-  p8 = createP('(M) wave ← →'). position (130, height-200);
-  s9 = createSlider(0, 100, 10, 0). position (50, height-150). size(250);
-  p9 = createP('(on) wave ← →'). position (130, height-150);//wave
+  s2 = createSlider(0, 10, 1.5, 0). position (50, height-200). size(200,10);
+  p2 = createP('Speed'). position (135, height-200);
+  s8 = createSlider(0, 100, 5, 0). position (50, height-150). size(200,10);
+  p8 = createP('(M) wave ← →'). position (105, height-150);
+  s9 = createSlider(0, 100, 5, 0). position (50, height-100). size(200,10);
+  p9 = createP('(on) wave ← →'). position (105, height-100);//wave
 
-  p0 = createP('√ Press "S" to save the image.png'). position (60, height-100);//save instruction
+  p0 = createP('√ Press "S" to save the image.png'). position (50, height-60);//save instruction
 
   ////color picker
-  inp1 = createColorPicker('blue') .position(50, height-750).size(50);
+  inp1 = createColorPicker('rgba(171, 171, 171, 0.9)') .position(50, height-680).size(75);
   inp1.input(setShade1);
-  q3 = createP('Background'). position (120, height-750);
+  q3 = createP('Background'). position (140, height-686);
 
-  inp3 = createColorPicker(color('black')).position(50, height -550).size(50);
+  inp3 = createColorPicker(color('black')).position(50, height -490).size(75);
   inp3.input(setShade2);
-  q5 = createP('―'). position (120, height-560);
+  q5 = createP('―'). position (140, height-500);
 
 
   setMidShade();
 
   ///text value
   let text = 'Mon'
-  let size = 10
+  let size = 6
 
 
-  points = font.textToPoints(text, -2, -6, size, {
+  points = font.textToPoints(text, -4, -12, size, {
     sampleFactor: 10,
     simplifyThreshold: 0
   })

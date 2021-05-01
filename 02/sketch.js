@@ -31,42 +31,45 @@ function centerCanvas() {
 
 function setup() {
 
-  cnv = createCanvas(1500, windowHeight). style('display', 'block');
+  cnv = createCanvas(750, windowHeight). style('display', 'block');
   centerCanvas();//centerCanvas
 
 
   ////////////////////////button
-  p20 = createP('【TEMPLATE】'). position (145, height-750);
-  button1 = createButton('Template 1').position(50, height-700);
-  button2 = createButton('Template 2').position(150, height-700);
-  button3 = createButton('Template 3').position(250, height-700);
+  // p20 = createP('【TEMPLATE】'). position (125, height-670);
+  // button1 = createButton('Template 1').position(50, height-620);
+  // button2 = createButton('Template 2').position(140, height-620);
+  // button3 = createButton('Template 3').position(230, height-620);
+  button1 = createButton('Template 1').position(50, height-680);
+  button2 = createButton('Template 2').position(50, height-650);
+  button3 = createButton('Template 3').position(50, height-620);
 
   ////Tues-slider
-  p0 = createP('【Tues-】'). position (155, height-600);//text size
-  s1 = createSlider(100, 1000, 500, 100). position (50, height-550). size(250);
-  p1 = createP('Text size'). position (150, height-550);//text size
+  p0 = createP('【Tues-】'). position (120, height-550);//text size
+  s1 = createSlider(100, 1000, 245, 100). position (50, height-500). size(200,10);
+  p1 = createP('Text size'). position (120, height-500);//text size
   
-  s2 = createSlider(-10, 1500, 20, 0). position (50, height-500). size(250);
-  p2 = createP('Shadow 1: ← →'). position (130, height-500);
-  s3 = createSlider(-10, 1080, 10, 0). position (50, height-450). size(250);
-  p3 = createP('Shadow 1: ↑ ↓'). position (130, height-450);//shadow 1
+  s2 = createSlider(-10, 1500, 20, 0). position (50, height-450). size(200,10);
+  p2 = createP('Shadow 1: ← →'). position (100, height-450);
+  s3 = createSlider(-10, 1080, 10, 0). position (50, height-400). size(200,10);
+  p3 = createP('Shadow 1: ↑ ↓'). position (110, height-400);//shadow 1
 
-  s4 = createSlider(-10, 1500, 2, 0). position (50, height-400). size(250);
-  p4 = createP('Shadow 2: ← →'). position (130, height-400);
-  s5 = createSlider(-10, 1080, 2, 0). position (50, height-350). size(250);
-  p5 = createP('Shadow 2: ↑ ↓'). position (130, height-350);//shadow 2
+  s4 = createSlider(-10, 1500, 2, 0). position (50, height-350). size(200,10);
+  p4 = createP('Shadow 2: ← →'). position (100, height-350);
+  s5 = createSlider(-10, 1080, 2, 0). position (50, height-300). size(200,10);
+  p5 = createP('Shadow 2: ↑ ↓'). position (110, height-300);//shadow 2
 
   ////day-slider
-  p6 = createP('【day】'). position (155, height-300);
-  s7 = createSlider(100, 1000, 500, 100). position (50, height-250). size(250);
-  p7 = createP('Text size'). position (150, height-250);//text size
+  p6 = createP('【day】'). position (130, height-250);
+  s7 = createSlider(100, 1000, 250, 100). position (50, height-200). size(200,10);
+  p7 = createP('Text size'). position (130, height-200);//text size
 
-  s8 = createSlider(-150, 900, -100, 900). position (50, height-200). size(250);
-  p8 = createP('Move ← →'). position (150, height-200);
-  s9 = createSlider(0, 1080, 500, 0). position (50, height-150). size(250);
-  p9 = createP('Move ↑ ↓'). position (150, height-150);//shadow 2
+  s8 = createSlider(0, 1000, 0, 0). position (50, height-150). size(200,10);
+  p8 = createP('Move ← →'). position (120, height-150);
+  s9 = createSlider(0, 1080, 350, 0). position (50, height-100). size(200,10);
+  p9 = createP('Move ↑ ↓'). position (130, height-100);//shadow 2
 
-  p10 = createP('√ Press "S" to save the image.png'). position (60, height-100);//save instruction
+  p10 = createP('√ Press "S" to save the image.png'). position (50, height-60);//save instruction
 
   // savebutton = createButton('save');
   // savebutton.position(150, height-100);
@@ -75,13 +78,13 @@ function setup() {
 
 
   ////color picker
-  inp1 = createColorPicker('white') .position(50, height-800).size(50);
+  inp1 = createColorPicker('white') .position(50, height-730).size(50);
   inp1.input(setShade1);
-  q3 = createP('Background'). position (120, height-800);
+  q3 = createP('Background'). position (115, height-736);
 
-  inp2 = createColorPicker(color('blue')).position(50, height -650).size(50);
+  inp2 = createColorPicker(color('blue')).position(50, height -580).size(50);
   inp2.input(setShade2);
-  q4 = createP('Tues-'). position (120, height-650);
+  q4 = createP('Tues-'). position (115, height-586);
 
   setMidShade();
 
@@ -115,7 +118,7 @@ function setShade2() {
 
 function windowResized() {
   centerCanvas();
-  resizeCanvas (1500, windowHeight );
+  resizeCanvas (750, windowHeight );
 }
 
 /////draw
@@ -124,11 +127,11 @@ function draw() {
   background(inp1.color());
 
 
-  pg = createGraphics(width, height)
+  pg = createGraphics(width, windowHeight)
   pg.textFont(font)
   pg.textAlign(CENTER)
   pg.blendMode(SCREEN)
-  pg.translate(width / 2, height / 3)
+  pg.translate(width/2, height / 3)
   pg.textSize(s1.value())
   push()
   pg.fill(inp2.color())
