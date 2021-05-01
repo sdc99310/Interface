@@ -1,20 +1,61 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+.box01 {
+  width: 261px;
+  height: 1080px;
+  padding: 0 21px 45px 0;
+  border: solid 1px #707070;
+  background-color: #ffffff;
 }
 
-canvas {
-  /* display: block; */
+.box02 {
+  width: 261px;
+  height: 1080px;
+  margin: 0 0 0 39px;
+  padding: 0 36px 802px 35px;
+  border: solid 1px #707070;
+  background-color: #ffffff;
+}
 
-  display: block;
+.box03{
+  width: 261px;
+  height: 1080px;
+  margin: 0 0 0 40px;
+  padding: 858px 37px 0 34px;
+  border: solid 1px #707070;
+  background-color: #ffffff;
+}
 
-  /* This centers our sketch horizontally. */
-  justify-content: center;
+.box04{
+  width: 261px;
+  height: 1080px;
+  margin: 0 0 0 41px;
+  padding: 0 38px 802px 33px;
+  border: solid 1px #707070;
+  background-color: #ffffff;
+}
 
-  /* This centers our sketch vertically. */
-  /* align-items: center; */
+.box05 {
+  width: 261px;
+  height: 1080px;
+  margin: 0 0 0 42px;
+  padding: 858px 39px 0 32px;
+  border: solid 1px #707070;
+  background-color: #ffffff;
+}
 
-  /* border: 0.1px solid rgb(155, 55, 130); */
-  /* border: 10mm ridge rgb(24, 3, 255); */
+.box06 {
+  width: 261px;
+  height: 1080px;
+  margin: 0 0 0 43px;
+  padding: 858px 40px 0 31px;
+  border: solid 1px #707070;
+  background-color: #ffffff;
+}
+
+.box07 { 
+  width: 258px;
+  height: 1080px;
+  margin: 0 0 0 44px;
+  padding: 0 38px 802px 30px;
+  border: solid 1px #707070;
+  background-color: #ffffff;
 }
