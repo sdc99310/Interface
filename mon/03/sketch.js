@@ -24,6 +24,12 @@ function setup() {
   cnv = createCanvas(1500, windowHeight). style('display', 'block');
   centerCanvas();//centerCanvas
 
+ ////////////////////////button
+ p20 = createP('【TEMPLATE】'). position (135, height-1220);
+ button1 = createButton('Template 1').position(50, height-1170);
+ button2 = createButton('Template 2').position(150, height-1170);
+ button3 = createButton('Template 3').position(250, height-1170);
+
 ////Wednse-slider
 p0 = createP('【Wednse】'). position (140, height-1120);
 
@@ -75,9 +81,9 @@ p10 = createP('√ Press "S" to save the image.png'). position (60, height-100);
 
 
 ///color picker
-  inp1 = createColorPicker('black') .position(50, height-1170).size(50);
+  inp1 = createColorPicker('black') .position(50, height-1270).size(50);
   inp1.input(setShade1);
-  q3 = createP('Background'). position (120, height-1170);
+  q3 = createP('Background'). position (120, height-1270);
 
   //wednse color
   inp2 = createColorPicker(color('rgba(255, 0, 0, 0.9)')).position(50, height -1070).size(50);

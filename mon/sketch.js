@@ -1,6 +1,8 @@
 var  cnv ; //centerCanvas
 
 //interface
+let button1, button2, button3;
+
 let s1,s2; //slider
 let inp1, inp2, inp3; //colorpicker
 
@@ -26,6 +28,12 @@ function centerCanvas() {
 function setup() {
   cnv = createCanvas(1500, windowHeight). style('display', 'block');
   centerCanvas();//centerCanvas
+
+  ////////////////////////button
+  p20 = createP('【TEMPLATE】'). position (140, height-700);
+  button1 = createButton('Template 1').position(50, height-650);
+  button2 = createButton('Template 2').position(150, height-650);
+  button3 = createButton('Template 3').position(250, height-650);
 
   ////////////////////////slider
   p1 = createP('【STROKE】'). position (150, height-600);
@@ -53,9 +61,9 @@ function setup() {
   p0 = createP('√ Press "S" to save the image.png'). position (60, height-100);//save instruction
 
   ////color picker
-  inp1 = createColorPicker('blue') .position(50, height-650).size(50);
+  inp1 = createColorPicker('blue') .position(50, height-750).size(50);
   inp1.input(setShade1);
-  q3 = createP('Background'). position (120, height-650);
+  q3 = createP('Background'). position (120, height-750);
 
   inp3 = createColorPicker(color('black')).position(50, height -550).size(50);
   inp3.input(setShade2);

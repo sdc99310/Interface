@@ -1,6 +1,7 @@
 var  cnv ; //centerCanvas
 
 //interface
+let button1, button2, button3;
 let s1,s2,s3,s4,s5,s6,s7,s8,s9; //slider
 let inp1, inp2; //colorpicker
 // let savebutton;
@@ -32,6 +33,13 @@ function setup() {
 
   cnv = createCanvas(1500, windowHeight). style('display', 'block');
   centerCanvas();//centerCanvas
+
+
+  ////////////////////////button
+  p20 = createP('【TEMPLATE】'). position (145, height-750);
+  button1 = createButton('Template 1').position(50, height-700);
+  button2 = createButton('Template 2').position(150, height-700);
+  button3 = createButton('Template 3').position(250, height-700);
 
   ////Tues-slider
   p0 = createP('【Tues-】'). position (155, height-600);//text size
@@ -67,9 +75,9 @@ function setup() {
 
 
   ////color picker
-  inp1 = createColorPicker('white') .position(50, height-700).size(50);
+  inp1 = createColorPicker('white') .position(50, height-800).size(50);
   inp1.input(setShade1);
-  q3 = createP('Background'). position (120, height-700);
+  q3 = createP('Background'). position (120, height-800);
 
   inp2 = createColorPicker(color('blue')).position(50, height -650).size(50);
   inp2.input(setShade2);

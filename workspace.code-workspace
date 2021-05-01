@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../p5-sketches"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Interface"
+	}
+}
