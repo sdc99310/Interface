@@ -67,19 +67,19 @@ function setup() {
 
   s2 = createSlider(0, 10, 1.5, 0). position (50, height-200). size(200,10);
   p2 = createP('Speed'). position (135, height-200);
-  s8 = createSlider(0, 100, 5, 0). position (50, height-150). size(200,10);
+  s8 = createSlider(0, 100, 3, 0). position (50, height-150). size(200,10);
   p8 = createP('(M) wave ← →'). position (105, height-150);
-  s9 = createSlider(0, 100, 5, 0). position (50, height-100). size(200,10);
+  s9 = createSlider(0, 100, 0, 0). position (50, height-100). size(200,10);
   p9 = createP('(on) wave ← →'). position (105, height-100);//wave
 
   p0 = createP('√ Press "S" to save the image.png'). position (50, height-60);//save instruction
 
   ////color picker
-  inp1 = createColorPicker('rgba(171, 171, 171, 0.9)') .position(50, height-580).size(75);
+  inp1 = createColorPicker('rgba(32, 38, 18, 0.9)') .position(50, height-580).size(75);
   inp1.input(setShade1);
   q3 = createP('Background'). position (140, height-586);
 
-  inp3 = createColorPicker(color('black')).position(50, height -490).size(75);
+  inp3 = createColorPicker(color('rgba(183, 16, 74, 0.9)')).position(50, height -490).size(75);
   inp3.input(setShade2);
   q5 = createP('―'). position (140, height-500);
 
@@ -87,7 +87,7 @@ function setup() {
   setMidShade();
 
   ///text value
-  let text = 'Mon'
+  let text = 'THU'
   let size = 6
 
 

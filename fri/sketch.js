@@ -49,8 +49,8 @@ function setup() {
 
 
   ////Tues-slider
-  p0 = createP('【Tues-】'). position (120, height-550);//text size
-  s1 = createSlider(100, 1000, 245, 100). position (50, height-500). size(200,10);
+  p0 = createP('【Fri-】'). position (120, height-550);//text size
+  s1 = createSlider(100, 1000, 300, 100). position (50, height-500). size(200,10);
   p1 = createP('Text size'). position (120, height-500);//text size
   
   s2 = createSlider(-10, 1500, 20, 0). position (50, height-450). size(200,10);
@@ -88,13 +88,13 @@ function setup() {
 
   inp2 = createColorPicker(color('blue')).position(50, height -580).size(50);
   inp2.input(setShade2);
-  q4 = createP('Tues-'). position (115, height-586);
+  q4 = createP('Fri-'). position (115, height-586);
 
   setMidShade();
 
   
   // Throttle frame rate for performance
-  frameRate(30)
+  frameRate(50)
 }
 ///////////////////////////////////////////////function
 // ///save canvas button
@@ -139,25 +139,25 @@ function draw() {
   pg.textSize(s1.value())
   push()
   pg.fill(inp2.color())
-  pg.text('Tues-', -4, -4)
+  pg.text('Fri-', -4, -4)
   pop()
   pg.fill(rgba[1])
-  pg.text('Tues-', 20 ,10)
+  pg.text('Fri-', 50 ,100)
   pg.fill(rgba[1])
-  pg.text('Tues-', s2.value() ,s3.value())
+  pg.text('Fri-', s2.value() ,s3.value())
   pg.fill(rgba[2])
-  pg.text('Tues-', 2, 2)
+  pg.text('Fri-', 52, 200)
   pg.fill(rgba[2])
-  pg.text('Tues-', s4.value() ,s5.value())
+  pg.text('Fri-', s4.value() ,s5.value())
 
   pg.textSize(s7.value())
   // pg.textAlign(RIGHT)
-  pg.fill(rgba[0])
-  pg.text('day', s8.value(), s9.value())
   pg.fill(rgba[1])
-  pg.text('day', s8.value()-20, s9.value()+4)
+  pg.text('day', s8.value(), s9.value())
   pg.fill(rgba[2])
-  pg.text('day', s8.value()-30, s9.value()+8)
+  pg.text('day', s8.value()-40, s9.value()+10)
+  pg.fill(rgba[0])
+  pg.text('day', s8.value()-60, s9.value()+20)
 
   tileSize = width / tiles
 

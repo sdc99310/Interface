@@ -16,7 +16,7 @@ function centerCanvas() {
 }//centerCanvas
 
 function mousePressed(){
-  if (mouseY >= 0 && mouseY <= 300 && mouseX >= 0 && mouseX <= 300){ 
+  if (mouseY >= 0 && mouseY <= 100 && mouseX >= 0 && mouseX <= 100){ 
   //   //range accounting for text length
     window.open("https://sdc99310.github.io/Interface/main.html")
   }
@@ -39,9 +39,9 @@ function setup() {
 button4 = createButton('GO MAIN: CLICK POSTER →').position(10, height-850);
 
 ////Wednse-slider
-p0 = createP('【Wednse】'). position (125, height-730);
+p0 = createP('【Satur】'). position (125, height-730);
 
-s1 = createSlider(100, 1000, 200, 100). position (50, height-620). size(110,10);//740
+s1 = createSlider(100, 1000, 350, 100). position (50, height-620). size(110,10);//740
 p1 = createP('Text size'). position (80, height-620);//text size
 s2 = createSlider(0, 1000, 400, 0). position (170, height-620). size(110,10);
 p2 = createP('Text: ↑ ↓'). position (200, height-620);
@@ -89,34 +89,34 @@ p10 = createP('√ Press "S" to save the image.png'). position (55, height-60);/
 
 
 ///color picker
-  inp1 = createColorPicker('black') .position(50, height-760).size(75);
+  inp1 = createColorPicker('rgba(247, 202, 222, 0.9)') .position(50, height-760).size(75);
   inp1.input(setShade1);
   q3 = createP('Background'). position (140, height-766);
 
-  //wednse color
-  inp2 = createColorPicker(color('rgba(255, 0, 0, 0.9)')).position(50, height -680).size(50);
+  //satur color
+  inp2 = createColorPicker(color('rgba(14, 92, 160, 0.9)')).position(50, height -680).size(50);
   inp2.input(setShade2);
   q4 = createP('Text'). position (65, height-665);
 
-  inp3 = createColorPicker(color('rgba(0, 255, 0, 0.9)')).position(135, height-680).size(50);
+  inp3 = createColorPicker(color('rgba(10, 56, 10, 0.9)')).position(135, height-680).size(50);
   inp3.input(setShade2);
   q5 = createP('Shadow 1'). position (135, height-665);
 
-  inp4 = createColorPicker(color('rgba(0, 0, 255, 0.9)')).position(220, height -680).size(50);
+  inp4 = createColorPicker(color('rgba(255, 0, 0, 0.9)')).position(220, height -680).size(50);
   inp4.input(setShade2);
   q5 = createP('Shadow 2'). position (220, height-665);
 
   //day color
 
-  inp5 = createColorPicker(color('rgba(255, 0, 0, 0.9)')).position(50, height -465).size(50);
+  inp5 = createColorPicker(color('black')).position(50, height -465).size(50);
   inp5.input(setShade2);
   q6 = createP('Text'). position (65, height-450);
 
-  inp6 = createColorPicker(color('rgba(0, 255, 0, 0.9)')).position(135, height -465).size(50);
+  inp6 = createColorPicker(color('rgba(255, 251, 138, 0.9)')).position(135, height -465).size(50);
   inp6.input(setShade2);
   q7 = createP('Shadow 1'). position (135, height-450);
 
-  inp7 = createColorPicker(color('rgba(0, 0, 255, 0.9)')).position(220, height -465).size(50);
+  inp7 = createColorPicker(color('rgba(56, 56, 255, 0.9)')).position(220, height -465).size(50);
   inp7.input(setShade2);
   q8 = createP('Shadow 2'). position (220, height-450);
 
@@ -175,13 +175,13 @@ function draw() {
   //wed
   graphic.textSize(s1.value())// textsize1 
   graphic.fill(inp2.color()) //color picker1
-  graphic.text('Wednse', width / 2, s2.value()) //position slider1
+  graphic.text('Satur', width / 2, s2.value()) //position slider1
   graphic.textSize(s1.value()-100)// textsize-100
   graphic.fill(inp3.color())//color picker2
-  graphic.text('Wednse', width / 1.95, s3.value()) //position slider2
+  graphic.text('Satur', width / 1.95, s3.value()) //position slider2
   graphic.textSize(s1.value()-200)// textsize-200
   graphic.fill(inp4.color())//color picker3
-  graphic.text('Wednse', width / 2, s4.value()) //position slider3
+  graphic.text('Satur', width / 2, s4.value()) //position slider3
 
   //day
   graphic.textSize(s6.value())

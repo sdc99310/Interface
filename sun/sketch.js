@@ -16,7 +16,7 @@ function centerCanvas() {
 }//centerCanvas
 
 function mousePressed(){
-  if (mouseY >= 0 && mouseY <= 300 && mouseX >= 0 && mouseX <= 300){ 
+  if (mouseY >= 0 && mouseY <= 100 && mouseX >= 0 && mouseX <= 300){ 
   //   //range accounting for text length
     window.open("https://sdc99310.github.io/Interface/main.html")
   }
@@ -38,17 +38,17 @@ function setup() {
 
 button4 = createButton('GO MAIN: CLICK POSTER →').position(10, height-850);
 
-////Wednse-slider
-p0 = createP('【Wednse】'). position (125, height-730);
+////sun-slider
+p0 = createP('【Sun】'). position (130, height-730);
 
-s1 = createSlider(100, 1000, 200, 100). position (50, height-620). size(110,10);//740
+s1 = createSlider(100, 1000, 300, 100). position (50, height-620). size(110,10);//740
 p1 = createP('Text size'). position (80, height-620);//text size
-s2 = createSlider(0, 1000, 400, 0). position (170, height-620). size(110,10);
+s2 = createSlider(0, 1000, 300, 0). position (170, height-620). size(110,10);
 p2 = createP('Text: ↑ ↓'). position (200, height-620);
 
-s3 = createSlider(0, 1000, 400, 0). position (50, height-570). size(110,10);
+s3 = createSlider(0, 1000, 330, 0). position (50, height-570). size(110,10);
 p3 = createP('Shadow 1: ↑ ↓'). position (60, height-570);
-s4 = createSlider(0, 1000, 390, 0). position (170, height-570). size(110,10);
+s4 = createSlider(0, 1000, 380, 0). position (170, height-570). size(110,10);
 p4 = createP('Shadow 2: ↑ ↓'). position (180, height-570);//position  //590
 
 ////day-slider
@@ -57,7 +57,7 @@ p4 = createP('【day】'). position (140, height-520); //540
 s6 = createSlider(0, 1200, 350, 0). position (50, height-400). size(110,10);//430
 p6 = createP('Text size'). position (80, height-400);//text size
 
-s7 = createSlider(100, 1800, 650, 100). position (170, height-400). size(110,10);
+s7 = createSlider(100, 1800, 600, 100). position (170, height-400). size(110,10);
 p7 = createP('Text: ↑ ↓'). position (200, height-400);//text size
 s8 = createSlider(100, 1800, 700, 100). position (50, height-350). size(110,10);
 p8 = createP('Shadow 1: ↑ ↓'). position (60, height-350);
@@ -67,17 +67,17 @@ p9 = createP('Shadow 2: ↑ ↓'). position (180, height-350);//shadow 2
 ////tile
 p11 = createP('【Tile】'). position (145, height-300);
 
-s12 = createSlider(0, 100, 20, 0). position (50, height-250). size(230,10);
+s12 = createSlider(0, 100, 15, 0). position (50, height-250). size(230,10);
 p12 = createP('Size'). position (155, height-250);//tile size
 
-s13 = createSlider(10, 200, 20, 10). position (50, height-200). size(110,10);
+s13 = createSlider(10, 200, 40, 10). position (50, height-200). size(110,10);
 p13 = createP('Distortion X'). position (70, height-200);
-s14 = createSlider(10, 200, 30, 10). position (170, height-200). size(110,10);
+s14 = createSlider(10, 200, 20, 10). position (170, height-200). size(110,10);
 p14 = createP('Distortion Y'). position (190, height-200);//Distortion
 
-s15 = createSlider(0, 200, 10, 0). position (50, height-150). size(110,10);
+s15 = createSlider(0, 200, 50, 0). position (50, height-150). size(110,10);
 p15 = createP('Width'). position (90, height-150);
-s16 = createSlider(0, 200, 0, 0). position (170, height-150). size(110,10);
+s16 = createSlider(0, 200,90, 0). position (170, height-150). size(110,10);
 p16 = createP('Height'). position (205, height-150);
 
 s17 = createSlider(0, 50, 1, 0). position (50, height-100). size(110,10);
@@ -89,20 +89,20 @@ p10 = createP('√ Press "S" to save the image.png'). position (55, height-60);/
 
 
 ///color picker
-  inp1 = createColorPicker('black') .position(50, height-760).size(75);
+  inp1 = createColorPicker('white') .position(50, height-760).size(75);
   inp1.input(setShade1);
   q3 = createP('Background'). position (140, height-766);
 
-  //wednse color
-  inp2 = createColorPicker(color('rgba(255, 0, 0, 0.9)')).position(50, height -680).size(50);
+  //sun color
+  inp2 = createColorPicker(color('rgba(97, 173, 255, 0.9)')).position(50, height -680).size(50);
   inp2.input(setShade2);
   q4 = createP('Text'). position (65, height-665);
 
-  inp3 = createColorPicker(color('rgba(0, 255, 0, 0.9)')).position(135, height-680).size(50);
+  inp3 = createColorPicker(color('rgba(255, 56, 56, 0.9)')).position(135, height-680).size(50);
   inp3.input(setShade2);
   q5 = createP('Shadow 1'). position (135, height-665);
 
-  inp4 = createColorPicker(color('rgba(0, 0, 255, 0.9)')).position(220, height -680).size(50);
+  inp4 = createColorPicker(color('rgba(255, 247, 5, 0.9)')).position(220, height -680).size(50);
   inp4.input(setShade2);
   q5 = createP('Shadow 2'). position (220, height-665);
 
@@ -112,7 +112,7 @@ p10 = createP('√ Press "S" to save the image.png'). position (55, height-60);/
   inp5.input(setShade2);
   q6 = createP('Text'). position (65, height-450);
 
-  inp6 = createColorPicker(color('rgba(0, 255, 0, 0.9)')).position(135, height -465).size(50);
+  inp6 = createColorPicker(color('rgba(140, 197, 140, 0.9)')).position(135, height -465).size(50);
   inp6.input(setShade2);
   q7 = createP('Shadow 1'). position (135, height-450);
 
@@ -175,13 +175,13 @@ function draw() {
   //wed
   graphic.textSize(s1.value())// textsize1 
   graphic.fill(inp2.color()) //color picker1
-  graphic.text('Wednse', width / 2, s2.value()) //position slider1
+  graphic.text('SUN', width / 2, s2.value()) //position slider1
   graphic.textSize(s1.value()-100)// textsize-100
   graphic.fill(inp3.color())//color picker2
-  graphic.text('Wednse', width / 1.95, s3.value()) //position slider2
+  graphic.text('SUN', width / 1.95, s3.value()) //position slider2
   graphic.textSize(s1.value()-200)// textsize-200
   graphic.fill(inp4.color())//color picker3
-  graphic.text('Wednse', width / 2, s4.value()) //position slider3
+  graphic.text('SUN', width / 2, s4.value()) //position slider3
 
   //day
   graphic.textSize(s6.value())
