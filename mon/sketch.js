@@ -24,11 +24,12 @@ function centerCanvas() {
 }//centerCanvas
 
 function mousePressed(){
-  // if (mouseY >= 100 && mouseY <= 120 && mouseX >= 110 && mouseX <= 130){ 
+  if (mouseY >= 0 && mouseY <= 300 && mouseX >= 0 && mouseX <= 300){ 
   //   //range accounting for text length
     window.open("https://sdc99310.github.io/Interface/main.html")
   }
-// }
+}
+
 
 ///////////////////////////////setup
 function setup() {
@@ -42,7 +43,7 @@ function setup() {
   // button3 = createButton('Template 3').position(50, height-570);
 
   // button4 = createButton('ꓧꓳꓟꓰ').position(10, height-850);
-  button4 = createButton('ꓫ').position(10, height-850);
+  button4 = createButton('GO MAIN: CLICK POSTER →').position(10, height-850);
 
 
 
