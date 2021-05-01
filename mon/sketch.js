@@ -26,7 +26,7 @@ function centerCanvas() {
 
 ///////////////////////////////setup
 function setup() {
-  cnv = createCanvas(1500/2, windowHeight/2). style('display', 'block');
+  cnv = createCanvas(750, windowHeight). style('display', 'block');
   centerCanvas();//centerCanvas
 
   ////////////////////////button
